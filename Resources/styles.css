@@ -1,0 +1,51 @@
+html {
+    background-color: black;
+    font-size: 16px;
+    width: 100%;
+}
+
+header {
+    color: white;
+    text-align: center;
+    position: relative;
+    border-bottom: solid;
+    font-family: "Anton SC", serif;
+}
+
+.mountain {
+    position: relative;
+    margin: 1.0rem;
+    color: white;
+    border-bottom: solid;
+}
+
+.mountain .name {
+    font-family: "Anton SC", serif;
+    text-align: center;
+}
+
+.display {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mountain img{
+    max-width: 25%;
+    border: solid white 0.2rem;
+    margin: 2.0rem;
+}
+
+.mountain img:hover {
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Geist';
+}
+
+
