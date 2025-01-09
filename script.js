@@ -1,9 +1,25 @@
-//gets all of the peak-picture elements in an array
-let pictures = document.getElementsByClassName('peak-picture');
+const peaks = ['longs'];
 
-//of accesses the values of the pictures array directly as opposed to in which accesses the indexes
-for (let picture of pictures) {
-    picture.onclick = function () {
-        picture.src="./Resources/keyhole.jpg"
+//gets all of the peak-picture elements in an array
+
+const shiftPictures = (id) => {
+    //Returns an array of all display elements
+    let displays = document.getElementById(id).getElementsByClassName('display');
+
+    for (let display of displays) {
+        let i = 1;
+        let picture = display.getElementsByClassName('peak-picture')[0];
+        picture.onclick = function() {
+            if (i !== 3) {
+                i += 1;
+            } else {
+                i = 1;
+            }
+            picture.src = `./Resources/${id}/${i}.jpg`; 
+        }
     }
+}
+
+for (let peak of peaks) {
+    shiftPictures(peak);
 }
