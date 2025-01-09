@@ -19,6 +19,29 @@ header {
     border-bottom: solid;
 }
 
+.picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.picture img{
+    width: 25rem;
+    height: 16rem;
+    border: solid white 0.2rem;
+    margin-right: 2.0rem;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.picture img:hover {
+    cursor: pointer;
+}
+
+.picture h3 {
+    color: white;
+    text-align: center;
+}
+
 .mountain .name {
     font-family: "Anton SC", serif;
     text-align: center;
@@ -28,24 +51,15 @@ header {
     display: flex;
     justify-content: left;
     flex-direction: row;
-    align-items: center;
-}
-
-.mountain img{
-    max-width: 25%;
-    border: solid white 0.2rem;
-    margin: 2.0rem;
-}
-
-.mountain img:hover {
-    cursor: pointer;
+    align-items: start;
 }
 
 .text {
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     font-family: 'Geist';
+    margin-top: 0px;
 }
 
 

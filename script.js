@@ -1,4 +1,4 @@
-const peaks = ['longs'];
+const peaks = ['longs', 'democrat'];
 
 //gets all of the peak-picture elements in an array
 
@@ -16,6 +16,7 @@ const shiftPictures = (id) => {
                 i = 1;
             }
             picture.src = `./Resources/${id}/${i}.jpg`; 
+            display.getElementsByClassName('picture-count')[0].innerHTML = `${i}/3`;
         }
     }
 }
