@@ -1,4 +1,4 @@
-const peaks = ['longs', 'democrat'];
+const peaks = ['longs', 'democrat', 'capitol'];
 
 //gets all of the peak-picture elements in an array
 
